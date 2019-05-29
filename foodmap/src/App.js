@@ -15,8 +15,8 @@ class App extends React.Component {
       <div className = "app">
 
     <Router>
-      <Route exact path="/" component= {Home}/>
-      <Route path ="/splashpage" component={SplashPage} />
+    <Route path="/" component={SplashPage} exact/>
+          <Route path="/Home" component={Home}/>
     </Router>
 
       </div>
