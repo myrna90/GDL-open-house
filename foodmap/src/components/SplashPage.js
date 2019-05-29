@@ -24,7 +24,7 @@ class SplashPage extends React.Component {
           <div>
     
             <div>
-              <p id="timer-label">FOODMAP</p>
+              <h1 id="timer-label">FOODMAP</h1>
               <p id="time-left">
                 {this.state.count ?(
                   <img src='https://vignette.wikia.nocookie.net/plantsvszombies/images/5/56/Pizza_loading.gif/revision/latest?cb=20170408195505' />

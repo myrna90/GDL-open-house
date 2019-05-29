@@ -15,7 +15,7 @@ class App extends React.Component {
 
     <Router>
     <Route path="/" component={SplashPage} exact/>
-          <Route path="/Inicio" component={Home}/>
+          <Route path="/Home" component={Home}/>
     </Router>
 
       </div>
