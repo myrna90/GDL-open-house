@@ -1,4 +1,5 @@
 import React from 'react';
+import GoogleMapReact from 'google-map-react';
 import './App.css';
 import { HashRouter as Router, Route } from "react-router-dom";
 import SplashPage from './components/SplashPage';
