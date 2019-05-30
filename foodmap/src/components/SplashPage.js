@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, Redirect } from "react-router-dom";
+import {Splash} from "./Splash.css";
+
 
 class SplashPage extends React.Component {
     constructor(props) {
@@ -23,7 +25,8 @@ class SplashPage extends React.Component {
         return (
           <div>
     
-            <div>
+    <div className='body'>
+
               <h1 id="timer-label">FOODMAP</h1>
               <p id="time-left">
                 {this.state.count ?(
@@ -41,4 +44,4 @@ class SplashPage extends React.Component {
     
 }
 
-export default SplashPage;
+export default SplashPage

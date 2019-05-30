@@ -1,0 +1,25 @@
+.body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(236, 196, 163);
+    background-size: cover;
+    background-repeat: no repeat;
+    height: 800px;
+    }
+    .image{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin-top: 200px;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    }
+    #time-left, #timer-label{
+    align-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;  
+    font-size:70px;
+    font-family:'Palatino Linotype';
+    color:red;
+    }

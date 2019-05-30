@@ -79,15 +79,17 @@ class MapComponent extends React.Component {
       height: "50vh"
     };
     return (
-      <Map
-        style={style}
-        google={this.props.google}
-        zoom={16}
-        onReady={this.fetchPlaces}
-        initialCenter={this.state.mainPlace}
-      >
-      
-      </Map>
+      <div>
+        <Map
+          style={style}
+          google={this.props.google}
+          zoom={16}
+          onReady={this.fetchPlaces}
+          initialCenter={this.state.mainPlace}
+        />
+  
+
+      </div>
     );
   }
 }
