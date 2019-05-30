@@ -1,16 +1,26 @@
-import React from "react";
-import GoogleMapReact from 'google-map-react';
+import React, {Component} from "react";
 import {Link} from "react-router-dom";
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
-
-class Home extends React.Component {
+class Home extends React.Component{
     render(){
+        
         return(
-            <div>
-                <h1>Hello!! Aqui va el mapa</h1>
-            </div>
+            <Map google={this.props.google} zoom={14}>
+ 
+        <Marker onClick={this.onMarkerClick}
+                name={'Current location'} />
+ 
+        <InfoWindow onClose={this.onInfoWindowClose}>
+           
+        </InfoWindow>
+      </Map>
         )
     }
 }
 
-export default Home;
+
+
+export default GoogleApiWrapper({
+    apiKey: ("AIzaSyC0VLXysIX4t0QzQlWFO0VIUyFfRZLV8nA")
+  })(Home)
