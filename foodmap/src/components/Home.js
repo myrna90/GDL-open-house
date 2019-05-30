@@ -1,13 +1,29 @@
 import React from "react";
-import GoogleMapReact from 'google-map-react';
+import {GoogleApiWrapper} from 'google-maps-react';
+
+import MapS from './MapS'
 import {Link} from "react-router-dom";
 
 
 class Home extends React.Component {
+constructor(){
+    super();
+    this.state={
+        location: [],
+        radius: 5000,
+        type: ['restaurant'],
+        markers : []
+    }
+let initMap = ()=>{
+
+}
+    
+}
+
     render(){
         return(
             <div>
-                <h1>Hello!! Aqui va el mapa</h1>
+               <MapS/>
             </div>
         )
     }
