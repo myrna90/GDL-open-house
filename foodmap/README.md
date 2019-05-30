@@ -1,68 +1,98 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Food Finder
 
-## Available Scripts
+Si eres amante, explorador de la comida, o simplemente te gustaría conocer qué opciones de comida se encuentran en tu zona, Food Finder es una aplicación que te permite encontrar y conocer restaurantes cerca de ti. En la  pagina principal de nuestra aplicación, podrás encontrar un mapa que te muestra tu ubicación y los restaurantes cercanos, también podrás seleccionar algunos filtros como órden alfabético, rango de precios, tipo de comida. 
 
-In the project directory, you can run:
+Nuestro usuario es una persona que valora el tiempo, que tiene interés por conocer pero está dispuesto a realizar una búsqueda para acertar en encontrar una buena experiencia culinaria.
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### `Historias de Usuario`
 
-### `npm test`
+Foodmap
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Yo usuario, deseo buscar opciones de restaurantes cerca de mi para elegir según mi antojo o proximidad a mi ubicación, para tomar mi decisión.
 
-### `npm run build`
+###PERFIL DEL USUARIO
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+El usuario es una persona con interés en comer rico y conocer nuevos lugares, que usa tecnología como herramienta y por ello le resulta útil tener una aplicación que al momento les pueda recomendar lugares agradables para comer.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Es una persona que valora el tiempo, que tiene interés por conocer y que está dispuesto a realizar una búsqueda para encontrar una nueva experiencia culinaria.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+###Historia de usuario 1.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+"El usuario necesita ingresar a la aplicación para ver una lista de restaurantes que pueda encontrar cerca"
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Debería haber una página principal en la que aparezca un mapa y una lista de elementos
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+consideraciones
 
-## Learn More
+¿Qué mostar en ese listado? Fotos de comidas? restaurantes?
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Tareas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Crear repositorio
 
-### Code Splitting
+Inicializar proyecto en React
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Conectar API mapas
 
-### Analyzing the Bundle Size
+Tener alguna data para mostar las opciones de comida
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Splash Screen
 
-### Making a Progressive Web App
+DOD.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Hay una página
+Se visualizan imágenes de comida
+Se visualiza un mapa
+Muestra restaurantes
+Historia de usuario 
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+###Historia de usuario 2.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+"El usuario necesita conocer las opciones de comida cerca de donde se encuentra."
 
-### `npm run build` fails to minify
+Debería haber un mapa en el que el usuario pueda conocer su ubicación y que muestre las opciones de comida a su alrededor
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Tareas
+
+Conectar la API de google e implementarla en el proyecto
+
+Conectar la API de localización e implementarla
+
+###Historia de usuario 3.
+
+"El usuario debería poder elegir un filtro de búsqueda y al seleccionar debería ver los resultados"
+
+Debería aparecer en la aplicación un select donde aparezcan las opciones de filtrado. Debería haber una función que filtre así como una función que filtre y muestre los resultados.
+
+Tipos de filtrado: Orden alfabético, calificación, tipo de comida,
+
+DOD
+
+Hay select con los tipos de filtro
+Se muestran los resultados en pantalla al elegir un filtro
+Existen funciones para los respectivos filtrados
+
+###Historia de usuario 4
+
+"El usuario escrolea y ve un platillo que se le antoja. Selecciona a imagen para conocer más detalles del restaurant"
+
+Al seleccionar una imagen debería haber una función que despliegue la información en un modal
+
+¿Qué información mostrar?: Nombre del restaurant, dirección.
+
+DOD
+
+1.Se muestra un card y se puede seleccionar
+
+2.Se despliega la información en un modal
+
+3.Al momento de cerrar te muestra los resultados que estabas consultando
+
+
+
