@@ -1,5 +1,5 @@
 import React from "react";
-import MapS from "./MapS";
+import MapComponent from "./MapComponent";
 import { Link } from "react-router-dom";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 
@@ -7,7 +7,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <MapS />
+        <MapComponent />
       </div>
     );
   }
