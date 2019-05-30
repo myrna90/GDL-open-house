@@ -32,7 +32,7 @@ class SplashPage extends React.Component {
                 {this.state.count ?(
                   <img src='https://vignette.wikia.nocookie.net/plantsvszombies/images/5/56/Pizza_loading.gif/revision/latest?cb=20170408195505' />
                 ) : (
-                  <Redirect to="/Home"/>
+                  <Redirect to="/location"/>
                 )
                  
                 } 
@@ -44,4 +44,4 @@ class SplashPage extends React.Component {
     
 }
 
-export default SplashPage
+export default SplashPage;

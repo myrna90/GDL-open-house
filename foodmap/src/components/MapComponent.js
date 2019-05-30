@@ -80,15 +80,16 @@ class MapComponent extends React.Component {
     };
     return (
       <div>
-        <Map
-          style={style}
-          google={this.props.google}
-          zoom={16}
-          onReady={this.fetchPlaces}
-          initialCenter={this.state.mainPlace}
-        />
-  
-
+        <div style={style}>
+          <Map
+            style={style}
+            google={this.props.google}
+            zoom={16}
+            onReady={this.fetchPlaces}
+            initialCenter={this.state.mainPlace}
+          />
+        </div>
+     
       </div>
     );
   }
