@@ -18,6 +18,4 @@ class Home extends React.Component{
 
 
 
-export default GoogleApiWrapper({
-    apiKey: ("AIzaSyC0VLXysIX4t0QzQlWFO0VIUyFfRZLV8nA")
-  })(Home)
+export default Home
