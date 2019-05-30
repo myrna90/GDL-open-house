@@ -1,16 +1,15 @@
 {
   "files": {
     "main.css": "/GDL-open-house/static/css/main.2cce8147.chunk.css",
-    "main.js": "/GDL-open-house/static/js/main.daf6f73a.chunk.js",
-    "main.js.map": "/GDL-open-house/static/js/main.daf6f73a.chunk.js.map",
+    "main.js": "/GDL-open-house/static/js/main.76d3e4b8.chunk.js",
+    "main.js.map": "/GDL-open-house/static/js/main.76d3e4b8.chunk.js.map",
     "runtime~main.js": "/GDL-open-house/static/js/runtime~main.4222a562.js",
     "runtime~main.js.map": "/GDL-open-house/static/js/runtime~main.4222a562.js.map",
-    "static/js/2.b41502e9.chunk.js": "/GDL-open-house/static/js/2.b41502e9.chunk.js",
-    "static/js/2.b41502e9.chunk.js.map": "/GDL-open-house/static/js/2.b41502e9.chunk.js.map",
+    "static/js/2.a9a6d898.chunk.js": "/GDL-open-house/static/js/2.a9a6d898.chunk.js",
+    "static/js/2.a9a6d898.chunk.js.map": "/GDL-open-house/static/js/2.a9a6d898.chunk.js.map",
     "index.html": "/GDL-open-house/index.html",
-    "precache-manifest.d1fa18931709e21d4f9be26aac6c36b6.js": "/GDL-open-house/precache-manifest.d1fa18931709e21d4f9be26aac6c36b6.js",
+    "precache-manifest.ac6df348e7f966611c02b60445fb1cb1.js": "/GDL-open-house/precache-manifest.ac6df348e7f966611c02b60445fb1cb1.js",
     "service-worker.js": "/GDL-open-house/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/GDL-open-house/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/GDL-open-house/static/media/logo.5d5d9eef.svg"
+    "static/css/main.2cce8147.chunk.css.map": "/GDL-open-house/static/css/main.2cce8147.chunk.css.map"
   }
 }
