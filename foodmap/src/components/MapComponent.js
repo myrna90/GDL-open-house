@@ -4,16 +4,13 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 class MapComponent extends React.Component {
   constructor() {
     super();
-    this.state = {
-      mainPlace: { lat: 20.650483, lng: -103.4054717 }
-    };
   }
 
   fetchPlaces = (mapProps, map) => {
     const { google } = mapProps;
     const service = new google.maps.places.PlacesService(map);
     var request = {
-      location: this.state.mainPlace,
+      location: this.props.mainLocation,
       radius: 1000,
       type: ["restaurant"]
     };
@@ -86,7 +83,7 @@ class MapComponent extends React.Component {
             google={this.props.google}
             zoom={16}
             onReady={this.fetchPlaces}
-            initialCenter={this.state.mainPlace}
+            initialCenter={this.props.mainLocation}
           />
         </div>
      

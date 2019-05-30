@@ -9,7 +9,7 @@ class Home extends React.Component {
     return (
       <div>
 
-        <MapComponent />
+        <MapComponent mainLocation={this.props.mainLocation} />
       
         <Filters/>
    
