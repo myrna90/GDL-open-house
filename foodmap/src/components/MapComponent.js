@@ -71,12 +71,16 @@ class MapComponent extends React.Component {
   };
 
   render() {
-    const style = {
-      width: "100vw",
-      height: "50vh"
-    };
+    const style={
+      width: "50vw",
+      height: "30vh",
+      display: "flex",
+      margin: "12%",
+      alignItems: "center",
+    }
     return (
       <div>
+        
         <div style={style}>
           <Map
             style={style}
@@ -85,6 +89,10 @@ class MapComponent extends React.Component {
             onReady={this.fetchPlaces}
             initialCenter={this.props.mainLocation}
           />
+          <div>
+          <input style={{display:"flex", alignContent:"center"}} type="search" placeholder="Search" aria-label="Search"></input>
+          </div>
+          
         </div>
      
       </div>

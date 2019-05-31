@@ -50,9 +50,9 @@ class App extends React.Component {
           />
           <Route path="/location" component={() => <LocationPermit  setMainLocation={this.setMainLocation} setStatusMessage={this.setStatusMessage}/>} />
         </Router>
+       
       </div>
     );
   }
 }
-
 export default App;
