@@ -4,73 +4,56 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 class MapComponent extends React.Component {
   constructor() {
     super();
+
+    this.state = {
+      selectedPlace: {},
+      activeMarker: null,
+      showInfoWindow: true
+    };
   }
+
+  onMarkerClick = (props, marker, e) => {
+    this.setState({
+      selectedPlace: props.place,
+      activeMarker: marker,
+      showInfoWindow: true
+    });
+  };
+
+  getMarkers = () => {
+    const markers = this.props.filteredPlaces.map(place => {
+      const markerJSX = (
+        <Marker
+          key={place.id}
+          onClick={this.onMarkerClick}
+          position={place.geometry.location}
+          title={place.name}
+          place={place}
+        />
+      );
+      return markerJSX;
+    });
+    return markers;
+  };
 
   fetchPlaces = (mapProps, map) => {
     const { google } = mapProps;
     const service = new google.maps.places.PlacesService(map);
-    var request = {
+    const request = {
       location: this.props.mainLocation,
       radius: 1000,
       type: ["restaurant"]
     };
-    service.nearbySearch(request, function(results, status) {
-      console.log(results);
-
+    service.nearbySearch(request, (results, status, pagination) => {
       if (status === google.maps.places.PlacesServiceStatus.OK) {
-        for (var i = 0; i < results.length; i++) {
-          const place = results[i];
-          const marker = new google.maps.Marker({
-            position: place.geometry.location,
-            map: map,
-            title: place.name
-          });
-
-          service.getDetails(
-            {
-              placeId: place.place_id,
-              fields: [
-                "address_component",
-                "adr_address",
-                "formatted_address",
-                "geometry",
-                "icon",
-                "name",
-                "permanently_closed",
-                "photo",
-                "place_id",
-                "plus_code",
-                "type",
-                "url",
-                "utc_offset",
-                "vicinity",
-                "formatted_phone_number",
-                "international_phone_number",
-                "opening_hours",
-                "website",
-                "price_level",
-                "rating",
-                "review",
-                "user_ratings_total"
-              ]
-            },
-            function(details) {
-              console.log(details);
-            }
-          );
-          const infoWindow = new google.maps.InfoWindow({
-            content: String.raw`<h1>${place.name}</h1>
-            `
-          });
-          marker.addListener("click", function() {
-            infoWindow.open(map, marker);
-          });
-        }
+        this.props.setLoadedPlaces(results);
+        this.props.setFilteredPlaces()
       }
     });
   };
 
   render() {
+    window.state = this.state;
     const style = {
       width: "100vw",
       height: "50vh"
@@ -84,9 +67,32 @@ class MapComponent extends React.Component {
             zoom={16}
             onReady={this.fetchPlaces}
             initialCenter={this.props.mainLocation}
-          />
+          >
+            {this.getMarkers()}
+            <InfoWindow
+              visible={this.state.showInfoWindow}
+              marker={this.state.activeMarker}
+            >
+              <div>
+                <h6>
+                  {this.state.selectedPlace
+                    ? this.state.selectedPlace.name
+                    : ""}
+                </h6>
+                {this.state.selectedPlace &&
+                this.state.selectedPlace.photos &&
+                this.state.selectedPlace.photos.length > 0 ? (
+                  <img
+                    src={this.state.selectedPlace.photos[0].getUrl()}
+                    style={{ height: "100px" }}
+                  />
+                ) : (
+                  ""
+                )}
+              </div>
+            </InfoWindow>
+          </Map>
         </div>
-     
       </div>
     );
   }
