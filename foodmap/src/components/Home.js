@@ -68,15 +68,16 @@ class Home extends React.Component {
     window.filteredPlaces = this.state.filteredPlaces;
     return (
       <div>
-        <header style={{backgroundColor: "#E19B5F", width: "100%", height: "150px", textAlign:"center"}}>FOOD FINDER</header>
-        <MapComponent
-          mainLocation={this.props.mainLocation}
-          filteredPlaces={this.state.filteredPlaces}
-          loadedPlaces={this.state.loadedPlaces}
-          setLoadedPlaces={this.setLoadedPlaces}
-          setFilteredPlaces={this.setFilteredPlaces}
-        />
-
+        <h2>FOOD FINDER</h2>
+        <div style={{ height: "400px" }}>
+          <MapComponent
+            mainLocation={this.props.mainLocation}
+            filteredPlaces={this.state.filteredPlaces}
+            loadedPlaces={this.state.loadedPlaces}
+            setLoadedPlaces={this.setLoadedPlaces}
+            setFilteredPlaces={this.setFilteredPlaces}
+          />
+        </div>
         <Filters filters={this.state.filters} setFilter={this.setFilter} />
 
         <div className="container" style={{ marginTop: "20px" }}>
@@ -84,7 +85,7 @@ class Home extends React.Component {
             <div className="row" key={`places${i}`}>
               {places.map((place, i2) => (
                 <div
-                  className="col card"
+                  className="col-md card"
                   key={`place${i2}`}
                   style={{ margin: "5px", paddingTop: "5px" }}
                 >
