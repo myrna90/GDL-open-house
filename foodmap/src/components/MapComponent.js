@@ -55,17 +55,19 @@ class MapComponent extends React.Component {
   };
 
   render() {
-    const style = {
-      width: "50vw",
-      display: "flex",
-      margin: "12%",
-      alignItems: "center"
+    const mapStyle = {
+      width: "100%",
+      height: "50vh",
+    };
+    const divStyle = {
+      width: "100%",
+      height: "50vh",
     };
     return (
       <div>
-        <Row>
+        <div style={divStyle}>
           <Map
-            style={{ height: "50%" }}
+            style={mapStyle}
             google={this.props.google}
             zoom={16}
             onReady={this.fetchPlaces}
@@ -95,7 +97,7 @@ class MapComponent extends React.Component {
               </div>
             </InfoWindow>
           </Map>
-        </Row>
+        </div>
       </div>
     );
   }

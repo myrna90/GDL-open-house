@@ -69,7 +69,6 @@ class Home extends React.Component {
     return (
       <div>
         <h2>FOOD FINDER</h2>
-        <div style={{ height: "400px" }}>
           <MapComponent
             mainLocation={this.props.mainLocation}
             filteredPlaces={this.state.filteredPlaces}
@@ -77,7 +76,6 @@ class Home extends React.Component {
             setLoadedPlaces={this.setLoadedPlaces}
             setFilteredPlaces={this.setFilteredPlaces}
           />
-        </div>
         <Filters filters={this.state.filters} setFilter={this.setFilter} />
 
         <div className="container" style={{ marginTop: "20px" }}>
