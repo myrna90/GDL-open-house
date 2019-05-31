@@ -53,13 +53,16 @@ class MapComponent extends React.Component {
   };
 
   render() {
-    window.state = this.state;
-    const style = {
-      width: "100vw",
-      height: "50vh"
-    };
+    const style={
+      width: "50vw",
+      height: "30vh",
+      display: "flex",
+      margin: "12%",
+      alignItems: "center",
+    }
     return (
       <div>
+        
         <div style={style}>
           <Map
             style={style}

@@ -68,6 +68,7 @@ class Home extends React.Component {
     window.filteredPlaces = this.state.filteredPlaces;
     return (
       <div>
+        <header style={{backgroundColor: "#E19B5F", width: "100%", height: "150px", textAlign:"center"}}>FOOD FINDER</header>
         <MapComponent
           mainLocation={this.props.mainLocation}
           filteredPlaces={this.state.filteredPlaces}
