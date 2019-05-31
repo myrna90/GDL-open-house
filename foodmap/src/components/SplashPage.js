@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
+import "./Splash.css"
 
 class SplashPage extends React.Component {
   constructor(props) {
@@ -23,11 +24,12 @@ class SplashPage extends React.Component {
     }
 
     return (
-      <div>
+      <div className="">
+      
         <div>
-          <h1 id="timer-label">FOODMAP</h1>
+          <h1 style= {{backgroundColor: "#E19B5F", width: "100%", height: "100px", textAlign:"center", fontSize:"70px", fontFamily:'Palatino Linotype', color:"red"}}  id="timer-label">FOODMAP</h1>
           <p id="time-left">
-            <img src={process.env.PUBLIC_URL + "loading.gif"} />
+            <img src={process.env.PUBLIC_URL + "/loading.gif"} />
           </p>
         </div>
       </div>

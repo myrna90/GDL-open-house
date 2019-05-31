@@ -68,7 +68,7 @@ class Home extends React.Component {
     window.filteredPlaces = this.state.filteredPlaces;
     return (
       <div>
-        <h2>FOOD FINDER</h2>
+        <h2 style={{backgroundColor: "#E19B5F", width: "100%", height: "100%", textAlign:"center", fontSize:"70px", fontFamily:'Palatino Linotype', color:"red"}}>FOOD FINDER</h2>
           <MapComponent
             mainLocation={this.props.mainLocation}
             filteredPlaces={this.state.filteredPlaces}

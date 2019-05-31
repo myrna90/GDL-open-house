@@ -9,7 +9,7 @@ class Filters extends React.Component {
 
   render() {
     return (
-      <div className="container" style={{ marginTop: "10px" }}>
+      <div className="container" style={{ marginTop: "10px", backgroundColor: "#E19B5F",textAlign:"center", fontSize:"20px", fontFamily:'Palatino Linotype', color:"red" }} >
         {/* <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input> */}
         <div className="row">
           <div className="col-3">
