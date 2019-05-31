@@ -1,5 +1,7 @@
 import React from "react";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 class MapComponent extends React.Component {
   constructor() {
@@ -80,20 +82,21 @@ class MapComponent extends React.Component {
     }
     return (
       <div>
-        
-        <div style={style}>
+        <Row>       
           <Map
-            style={style}
+            style={{ height: "50%"}}
             google={this.props.google}
             zoom={16}
             onReady={this.fetchPlaces}
             initialCenter={this.props.mainLocation}
           />
-          <div>
-          <input style={{display:"flex", alignContent:"center"}} type="search" placeholder="Search" aria-label="Search"></input>
+        </Row>
+        <Row>
+        <div>
+          <input type="search" placeholder="Search" aria-label="Search"></input>
           </div>
-          
-        </div>
+        </Row>
+
      
       </div>
     );

@@ -9,7 +9,7 @@ class SplashPage extends React.Component {
           count: true
         }
         this.handleStartStop = this.handleStartStop.bind(this);
-        setTimeout(this.handleStartStop, 2000)
+       // setTimeout(this.handleStartStop, 2000)
       }
     
       handleStartStop() {

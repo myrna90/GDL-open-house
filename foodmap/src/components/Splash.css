@@ -1,10 +1,12 @@
 .body{
     margin: 0;
     padding: 0;
-    background-color:rgb(236, 196, 163);
-    background-size: cover;
-    background-repeat: no repeat;
+    /* background-color:rgb(236, 196, 163); */
+    /* background-size: cover; */
+    background-image: 'textura.jpg';
+    /* background-repeat: no repeat; */
     height: 800px;
+    font-family:'Segoe UI';
     }
     .image{
     width: 300px;
@@ -20,6 +22,6 @@
     margin: 0;
     padding: 0;  
     font-size:70px;
-    font-family:'Palatino Linotype';
+    font-family:'Segoe UI';
     color:red;
     }
