@@ -30,6 +30,7 @@ class LocationPermit extends React.Component {
 
     return (
       <div>
+         <header style={{backgroundColor: "#E19B5F", width: "100%", height: "120px", textAlign:"center", fontSize:"70px", fontFamily:'Palatino Linotype', color:"black"}}>FOOD FINDER</header>
         <input
           type="button"
           className=""

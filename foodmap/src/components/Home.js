@@ -8,8 +8,10 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-
+ <header style={{backgroundColor: "#E19B5F", width: "100%", height: "150px", textAlign:"center"}}>FOOD FINDER</header>
+  
         <MapComponent mainLocation={this.props.mainLocation} />
+
       
         <Filters/>
    
