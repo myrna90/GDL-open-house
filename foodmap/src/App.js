@@ -5,6 +5,7 @@ import SplashPage from "./components/SplashPage";
 import Home from "./components/Home";
 import LocationPermit from "./components/LocationPermit";
 
+
 class App extends React.Component {
   constructor() {
     super();
