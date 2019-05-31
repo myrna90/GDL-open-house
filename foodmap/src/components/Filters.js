@@ -1,11 +1,11 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
+
 
 class Filters extends React.Component {
   constructor() {
     super();
   }
-
-  handleSelectChange = e => {};
 
   render() {
     return (
@@ -13,7 +13,7 @@ class Filters extends React.Component {
         {/* <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input> */}
         <div className="row">
           <div className="col-3">
-            <label for="priceFilter">Precio:</label>{" "}
+            <label htmlFor="priceFilter">Precio:</label>{" "}
             <select
               className="custom-select"
               name="priceFilter"
@@ -29,7 +29,7 @@ class Filters extends React.Component {
             </select>
           </div>
           <div className="col-3">
-            <label for="ratingFilter">Calificacion:</label>{" "}
+            <label htmlFor="ratingFilter">Calificacion:</label>{" "}
             <select
               className="custom-select"
               name="ratingFilter"

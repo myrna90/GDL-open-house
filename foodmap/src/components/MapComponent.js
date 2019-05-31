@@ -1,5 +1,7 @@
 import React from "react";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 class MapComponent extends React.Component {
   constructor() {
@@ -47,25 +49,24 @@ class MapComponent extends React.Component {
     service.nearbySearch(request, (results, status, pagination) => {
       if (status === google.maps.places.PlacesServiceStatus.OK) {
         this.props.setLoadedPlaces(results);
-        this.props.setFilteredPlaces()
+        this.props.setFilteredPlaces();
       }
     });
   };
 
   render() {
-    const style={
+    const style = {
       width: "50vw",
       height: "30vh",
       display: "flex",
       margin: "12%",
-      alignItems: "center",
-    }
+      alignItems: "center"
+    };
     return (
       <div>
-        
-        <div style={style}>
+        <Row>
           <Map
-            style={style}
+            style={{ height: "50%" }}
             google={this.props.google}
             zoom={16}
             onReady={this.fetchPlaces}
@@ -95,7 +96,7 @@ class MapComponent extends React.Component {
               </div>
             </InfoWindow>
           </Map>
-        </div>
+        </Row>
       </div>
     );
   }
