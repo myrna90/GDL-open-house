@@ -1,12 +1,13 @@
-.body{
+.texture{
     margin: 0;
     padding: 0;
     /* background-color:rgb(236, 196, 163); */
     /* background-size: cover; */
-    background-image: 'https://res.cloudinary.com/dn98ljs5k/image/upload/v1559308965/textura.jpg';
+    background: url('https://res.cloudinary.com/dn98ljs5k/image/upload/v1559308965/textura.jpg');
     /* background-repeat: no repeat; */
     height: 800px;
     font-family:'Segoe UI';
+    
     }
     .image{
     width: 300px;

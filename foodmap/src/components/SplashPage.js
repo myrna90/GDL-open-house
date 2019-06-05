@@ -24,7 +24,7 @@ class SplashPage extends React.Component {
     }
 
     return (
-      <div className="">
+      <div className="texture" >
       
         <div>
           <h1 style= {{backgroundColor: "#E19B5F", width: "100%", height: "100px", textAlign:"center", fontSize:"70px", fontFamily:'Palatino Linotype', color:"red"}}  id="timer-label">FOODMAP</h1>
