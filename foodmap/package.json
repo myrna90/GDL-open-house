@@ -2,7 +2,7 @@
   "name": "foodmap",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://monicamun.github.io/GDL-open-house",
+  "homepage": "http://myrna90.github.io/GDL-open-house",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
